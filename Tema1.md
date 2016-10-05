@@ -80,7 +80,44 @@ Mirar respuesta en el [issue](https://github.com/JJ/IV16-17/issues/1) correspond
 ### Ejercicio 4
 #### Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
+Comprobamos que flags tiene el procesador.
+~~~~~~~~~
+$ egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx f16c rdrand lahf_lm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts
+~~~~~~~~~
+Se puede ver que efectivamente tengo el flag vmx activado, por lo cual es posible la virtualización.
 
+Ahora usando *cat /proc/cpuinfo* veo que modelo de procesador tengo:
+~~~~~
+$ cat /proc/cpuinfo
+  processor	: 0
+  vendor_id	: GenuineIntel
+  cpu family	: 6
+  model		: 58
+  model name	: Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz
+  stepping	: 9
+  microcode	: 0x1c
+  cpu MHz		: 799.945
+  cache size	: 3072 KB
+  physical id	: 0
+  siblings	: 4
+  core id		: 0
+  cpu cores	: 2
+  apicid		: 0
+  initial apicid	: 0
+  fpu		: yes
+  fpu_exception	: yes
+  cpuid level	: 13
+  wp		: yes
+  flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx f16c rdrand lahf_lm epb tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts
+  bugs		:
+  bogomips	: 3591.69
+  clflush size	: 64
+  cache_alignment	: 64
+  address sizes	: 36 bits physical, 48 bits virtual
+  power management:
+~~~~~
+El modelo de procesador es Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz
 
 ### Ejercicio 5
 #### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
