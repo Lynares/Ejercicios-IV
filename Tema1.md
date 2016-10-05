@@ -70,7 +70,9 @@ Como se puede ver el servidor en la nube es el doble de caro.
 
 ### Ejercicio 3
 #### ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
-  Mirar respuesta en el [issue](https://github.com/JJ/IV16-17/issues/1) correspondiente
+
+Mirar respuesta en el [issue](https://github.com/JJ/IV16-17/issues/1) correspondiente
+
 #### Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
 
@@ -83,4 +85,20 @@ Como se puede ver el servidor en la nube es el doble de caro.
 ### Ejercicio 5
 #### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
+Para poder usar kvm-ok primero se debe de instalar el paquete cpu-checker, para ello al usar Linux Mint será necesario hacer:
+> sudo apt-get install cpu-checker
+
+Una vez instalado dicho paquete podremos obtener la información que necesitamos, en mi caso la consola devuelve:
+~~~~~~
+$ kvm-ok
+INFO: /dev/kvm exists
+KVM acceleration can be used
+~~~~~~
+Por lo cual puedo usar la aceleración por hardware del procesador.
+
 #### Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios.
+
+En mi caso tengo instalados tanto VirtualBox como VMWare desde hace tiempo. Si se desea instalar VirtualBox bastará con:
+> sudo apt-get install virtualbox-qt
+
+Para la instalación de VMWare, será necesario ir a su página web y seguir los pasos que allí se indican.
