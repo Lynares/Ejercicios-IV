@@ -30,6 +30,43 @@ Por lo cual tendremos una amortización de 254,66€ por año.
 ### Ejercicio 2
 #### Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) en el caso de que la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
+En [Strato](https://www.strato.es/vps-linux/) encontramos distintos servicios de alojamiento en Internet para poder elegir el que más se adapte a lo que necesitamos. Escojo Linux L3 que tiene las siguientes caracteristicas:
+~~~~~~~
+8 CPU vCores
+Hasta 16 GB RAM
+600 GB SSD/HDD
+~~~~~~~
+Cuyo precio es de 24,90 €/mes.
+
+En [Axarnet](https://www.axarnet.es/servidores-cloud/) encontramos distintos servidores cloud para poder elegir el que más se adapte a nuestras necesidades. Escojo Cloud L que tiene las siguientes caracteristicas:
+~~~~~~~
+8 GB RAM
+2 vCPU
+250 GB Disco
+~~~~~~~
+Cuyo precio es de 49,95 €/mes.
+
+#### Para un uso anual del 1%
+
+Redondeo hacia arriba.
+
+Strato  -> 24,90€/mes * 1% =0,25€/mes
+> 0,25€/mes * 12 meses = 3€ al año
+
+Axarnet -> 49,95 * 1% =0,50€/mes
+> 0,50€/mes * 12 meses = 6€ al año
+
+#### Para un uso anual del 10%
+
+Redondeo hacia arriba.
+
+Strato  -> 24,90€/mes * 10% =2,5€/mes
+> 2,5€/mes * 12 meses = 30€ al año
+
+Axarnet -> 49,95 * 10% =5€/mes
+> 5€/mes * 12 meses = 60€ al año
+
+Como se puede ver el servidor en la nube es el doble de caro.
 
 ### Ejercicio 3
 #### ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
