@@ -1,4 +1,4 @@
-# Ejercicios Tema 1
+# Ejercicios [Tema 1](http://jj.github.io/IV/documentos/temas/Intro_concepto_y_soporte_fisico#introduccin)
 
 ### Ejercicio 1
 #### Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este [artículo](http://infoautonomos.eleconomista.es/consultas-a-la-comunidad/988/) en Infoautónomos sobre el tema.
@@ -71,7 +71,7 @@ Como se puede ver el servidor en la nube es el doble de caro.
 ### Ejercicio 3
 #### ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
 
-Mirar respuesta en el [issue](https://github.com/JJ/IV16-17/issues/1) correspondiente
+Mirar respuesta en el [issue](https://github.com/JJ/IV16-17/issues/1) correspondiente.
 
 #### Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
@@ -145,4 +145,4 @@ Por lo cual puedo usar la aceleración por hardware del procesador.
 En mi caso tengo instalados tanto VirtualBox como VMWare desde hace tiempo. Si se desea instalar VirtualBox bastará con:
 > sudo apt-get install virtualbox-qt
 
-Para la instalación de VMWare, será necesario ir a su página web y seguir los pasos que allí se indican.
+Para la instalación de VMWare, será necesario ir a su página web y seguir los pasos que [allí](http://www.vmware.com/products/player/playerpro-evaluation.html) se indican.
