@@ -7,7 +7,7 @@ La tienda que voy a consultar es una conocida por casi todos, PcComponentes, en 
 
 En mi caso voy a realizar los calculos sobre [HP ProLiant BL460c Gen9 E5-2620v3](https://www.pccomponentes.com/hp-proliant-bl460c-gen9-e5-2620v3) cuyo precio es de 2157€.
 
-##### Amortización a cuatro años.
+#### Amortización a cuatro años.
 Suponemos que el ordenador se compra a principios de año, pues como se dice en el articulo, si el ordenador se compra después de mitad de año solo podremos amortizar la mitad ese año.
 
 Tenemos que quitar el IVA, que es el 21% del precio que pagamos del artículo. Tendríamos entonces un precio sin IVA de:
@@ -18,7 +18,7 @@ Ahora al ser la amortización a cuatro años tenemos que dividirlo por 4:
 
 Por lo cual tendremos una amortización de 445,66€ por año.
 
-##### Amortización a siete años.
+#### Amortización a siete años.
 Teniendo el mismo supuesto que en la amortización de cuatro años, tenemos el mismo precio sin IVA, lo único que cambia es que hay que dividirlo por siete.
 
 Ahora al ser la amortización a siete años tenemos que dividirlo por 7:
@@ -50,20 +50,20 @@ Cuyo precio es de 49,95 €/mes.
 
 Redondeo hacia arriba.
 
-Strato  -> 24,90€/mes * 1% =0,25€/mes
+Strato  -> 24,90€/mes * 1% = 0,25€/mes
 > 0,25€/mes * 12 meses = 3€ al año
 
-Axarnet -> 49,95 * 1% =0,50€/mes
+Axarnet -> 49,95 * 1% = 0,50€/mes
 > 0,50€/mes * 12 meses = 6€ al año
 
 #### Para un uso anual del 10%
 
 Redondeo hacia arriba.
 
-Strato  -> 24,90€/mes * 10% =2,5€/mes
+Strato  -> 24,90€/mes * 10% = 2,5€/mes
 > 2,5€/mes * 12 meses = 30€ al año
 
-Axarnet -> 49,95 * 10% =5€/mes
+Axarnet -> 49,95 * 10% = 5€/mes
 > 5€/mes * 12 meses = 60€ al año
 
 Como se puede ver el servidor en la nube es el doble de caro.
@@ -75,7 +75,14 @@ Mirar respuesta en el [issue](https://github.com/JJ/IV16-17/issues/1) correspond
 
 #### Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
+Al ser un programa simple, el más simple que a cualquiera se le ocurriría es el típico "Hola mundo!!!", y básicamente ese es el programa:
+> print "Hola mundo!!!"
 
+Ahora, lo siguiente será instalar CDE:
+> sudo apt-get install cde
+
+Para empaquetar el programa y poder ejecutarlo, se utiliza el comando:
+>cde python ej3.py
 
 ### Ejercicio 4
 #### Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
